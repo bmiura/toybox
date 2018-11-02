@@ -14,3 +14,11 @@ lifegame_new.pyは2018年10月にlifegame.pyをリファクタしたもの。
 
 ## transhelper.js
 論文をgoogle翻訳にかけるときに便利なブックマークレット。
+
+## check_gpu.py
+1. `nvidia-smi`でどのGPUでどのプロセスが動いてるか調べる  
+2. `/proc/{pid}/cgroup`を見てそのプロセスがどのdockerコンテナ由来か調べる  
+3. `docker ps`でコンテナidからコンテナ名を調べる  
+4. 表示する  
+
+をするだけのプログラム。使用宣言してないのにこっそりGPU使ってる人を割り出そうな。
