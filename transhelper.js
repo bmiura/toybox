@@ -1,1 +1,1 @@
-javascript:void((function(undefined){document.getElementById("source").value=document.getElementById("source").value.replace(/-\n/g,'').replace(/\n/g,' ')})());
+javascript:void((function(undefined){document.getElementById("source").value=document.getElementById("source").value.replace(/- /g,'').replace(/-\n/g,'').replace(/\n/g,' ').replace(/\. (?=[a-zA-Z])/g,'.\n')})());
